@@ -14,9 +14,9 @@ import java.util.Map;
  */
 public class HelloWorldHandler implements RequestHandler<Object, Object> {
 
-    public Object handleRequest(final Object input, final Context context) {
-        Map<String, String> headers = new HashMap<>();
-        headers.put("Content-Type", "application/json");
-        return new GatewayResponse(new JSONObject().put("Output", "Hello World!").toString(), headers, 200);
-    }
+	public Object handleRequest(final Object input, final Context context) {
+		Map<String, String> headers = new HashMap<>();
+		headers.put("Content-Type", "application/json");
+		return new GatewayResponse(new JSONObject().put("Output", "What the fuck").toString(), headers, 200);
+	}
 }
